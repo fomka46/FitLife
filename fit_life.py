@@ -14,14 +14,14 @@ WATER_ONE_LITER = 1000
 print('Привет! Я твой фитнес-помощник FitLife. Давай познакомимся')
 
 # Получение информации от пользователя
-user_name = input('Как тебя зовут? ')
+user_name = input('Как тебя зовут? ').title()
 user_age = int(input('Сколько тебе полных лет? '))
 
 # 2. Сбор данных
 print(f'Что бы я стал полезным для тебя, {user_name}, '
       'мне нужно еще немного информации.')
-user_weight = float(input('Какой твой вес? (в килограммах, используя точку) '))
-user_height = float(input('Какой твой рост? (в метрах, используя точку) '))
+user_weight = float(input('Какой твой вес? (в килограммах)').replace(',', '.'))
+user_height = float(input('Какой твой рост? (в метрах)').replace(',', '.'))
 
 # Расчет индекса массы тела
 bmi = round(user_weight / (user_height ** 2), 2)
