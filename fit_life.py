@@ -31,7 +31,7 @@ water_norm = round(user_weight * WATER_PER_KG / WATER_ONE_LITER, 1)
 
 # Вывод результатов
 print(
-    f'Отчет для пользователя: {user_name} ({user_age} л.)\n'
+    f'Отчет для пользователя: {user_name} ({user_age} л .)\n'
     f'Твой Индекс Массы Тела: {bmi}\n'
     f'Рекомендуемая норма воды: {water_norm} л. в день\n\n'
     'Расчет окончен. Будьте здоровы!',
